@@ -2,9 +2,9 @@
 document.getElementById('startButton').addEventListener('click', startBreathingExercise);
 
 const messages = [
-    "Inspire profundamente por 40 segundos...",
-    "Segure a respiração por 40 segundos...",
-    "Expire lentamente por 40 segundos...",
+    "Inspire profundamente por 10 segundos...",
+    "Segure a respiração por 10 segundos...",
+    "Expire lentamente por 10 segundos...",
     "Tudo bem sentir o que você está sentindo.",
     "Respire fundo, você está no controle.",
     "Você está seguro, isso vai passar."
@@ -22,7 +22,7 @@ function showNextMessage() {
     if (messageIndex < messages.length) {
         document.getElementById('message').textContent = messages[messageIndex];
         messageIndex++;
-        setTimeout(showNextMessage, 40000); // Espera 40 segundos antes de mostrar a próxima mensagem
+        setTimeout(showNextMessage, 10000); // Espera 10 segundos antes de mostrar a próxima mensagem
     } else {
         document.getElementById('mapsButton').classList.remove('hidden');
         document.getElementById('message').textContent = "Você concluiu o exercício.";
