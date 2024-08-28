@@ -25,7 +25,7 @@ function showNextMessage() {
         setTimeout(showNextMessage, 10000); // Espera 10 segundos antes de mostrar a próxima mensagem
     } else {
         document.getElementById('mapsButton').classList.remove('hidden');
-        document.getElementById('message').textContent = "Você concluiu o exercício.";
+        document.getElementById('message').textContent = "Ainda está se sentindo mal? Clique aqui para encontrarmos um hospital.";
     }
 }
 
